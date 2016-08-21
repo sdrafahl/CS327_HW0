@@ -1,0 +1,12 @@
+/home/shanedrafahl/Projects/FairOrderingSystem/FairOrderingSystem/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/shanedrafahl/Projects/FairOrderingSystem/FairOrderingSystem/bin/FairOrderingSystem.dll.mdb
+/home/shanedrafahl/Projects/FairOrderingSystem/FairOrderingSystem/bin/FairOrderingSystem.dll
+/home/shanedrafahl/Projects/FairOrderingSystem/FairOrderingSystem/obj/Debug/FairOrderingSystem.dll
+/home/shanedrafahl/Projects/FairOrderingSystem/FairOrderingSystem/obj/Debug/FairOrderingSystem.dll.mdb
+/home/shanedrafahl/Projects/FairOrderingSystem/FairOrderingSystem/bin/Microsoft.Web.Infrastructure.dll
+/home/shanedrafahl/Projects/FairOrderingSystem/FairOrderingSystem/bin/System.Web.Razor.dll
+/home/shanedrafahl/Projects/FairOrderingSystem/FairOrderingSystem/bin/System.Web.Helpers.dll
+/home/shanedrafahl/Projects/FairOrderingSystem/FairOrderingSystem/bin/System.Web.WebPages.dll
+/home/shanedrafahl/Projects/FairOrderingSystem/FairOrderingSystem/bin/System.Web.WebPages.Deployment.dll
+/home/shanedrafahl/Projects/FairOrderingSystem/FairOrderingSystem/bin/System.Web.WebPages.Razor.dll
+/home/shanedrafahl/Projects/FairOrderingSystem/FairOrderingSystem/bin/System.Web.Mvc.dll

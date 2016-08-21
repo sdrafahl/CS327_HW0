@@ -1,0 +1,17 @@
+﻿<Properties StartupItem="FairOrderingSystem/FairOrderingSystem.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="/usr/bin/google-chrome-stable" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FairOrderingSystem/Views/Shared/_Layout.cshtml">
+    <Files>
+      <File FileName="FairOrderingSystem/Controllers/HomeController.cs" Line="34" Column="1" />
+      <File FileName="FairOrderingSystem/Models/OrderForm.cs" Line="12" Column="1" />
+      <File FileName="FairOrderingSystem/Models/Company.cs" Line="3" Column="29" />
+      <File FileName="FairOrderingSystem/Models/Order.cs" Line="3" Column="29" />
+      <File FileName="FairOrderingSystem/Views/Home/Index.cshtml" Line="3" Column="2" />
+      <File FileName="FairOrderingSystem/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

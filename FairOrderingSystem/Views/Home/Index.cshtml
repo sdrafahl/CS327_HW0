@@ -1,0 +1,16 @@
+﻿﻿@{
+	ViewBag.Title = "Home";
+}
+<script type= "text/javascript" src ="Scripts/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="Scripts/script.js"></script>
+<div class="inputBox">
+		<div>
+			<label>User</label>
+			<input />
+			<label>Password</label>
+			<input />
+		</div>
+
+		<button type ="button" id="newUserButton" onclick="location.href='@Url.Action("NewUser","Home")'">New User</button>
+		<button type ="button" id="newUserButton" onclick="location.href='@Url.Action("LoginS","Home")'">Login</button>
+</div>
