@@ -1,2 +1,2 @@
 # Iowa-State-Fair-Ordering-System
-This is a system I am current writing based off of ASP.NET MVC in order for Vendors at the Iowa State Fair to order Internet or phone.
+The Iowa State Fair Ordering System will be composed of a ASP.NET MVC web app and a C++ application to control the MySQL database as a middle man between ASP.NET and MySQL.
