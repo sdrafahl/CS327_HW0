@@ -5,7 +5,13 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Mvc.Ajax;
 using System.Diagnostics;
+using MySql.Data.MySqlClient;
+using FairOrderingSystem;
+
 //http://stackoverflow.com/questions/878632/best-way-to-call-external-program-in-c-sharp-and-parse-output
+//https://forum.teksyndicate.com/t/asp-net-mvc-text-box/106790/12
+using System.Data;
+
 namespace Fair.Controllers
 {
 	public class HomeController : Controller
@@ -30,21 +36,37 @@ namespace Fair.Controllers
 		public ActionResult LoginS(){
 			return View ();
 		}
-		public void creatUser(){
 
-			//string company = Request.Form ["company"];
-			string company = "Iowa State";
-			string cell = "6414";
-			string phone = "641521";
-			string password = "test";
-			string email = "iowa@isu.edu";
-			Process p = new Process ();
-			p.StartInfo.FileName = "/home/shanedrafahl/project/Iowa_State_Fair_OrderingSystem/CppMiddleMan/cppsql";
-			p.StartInfo.Arguments = "0 " + phone + " 0 " + company + " " + cell + " " + password + " " + email;
-			p.StartInfo.UseShellExecute = false;
-			p.StartInfo.RedirectStandardOutput = true;
-			p.Start();
-			p.WaitForExit ();
+		[HttpPost]
+		public ActionResult creatUser(FairOrderingSystem.Models.Company comp){
+				if(ModelState.IsValid){
+					string company = comp.companyName;
+					string Cell = comp.cell;
+					string Phone = comp.phone;
+					string Password = comp.password;
+					string Email = comp.email;
+
+					string connectionString = 
+						"Server=localhost;" +
+						"Database=fair;" +
+						"User ID=shane;" +
+						"Password=Gaming12;" +
+						"Pooling=false";
+					string sqlCommand = "INSERT INTO COMPANIES VALUES ('" + company + "','" + Cell + "','" + Phone + "','" + Password + "',NULL,'" + Email + "');";
+					MySqlConnection conn = new MySqlConnection (connectionString);
+					conn.Open ();
+					MySqlCommand comm = conn.CreateCommand ();
+					comm.CommandText = sqlCommand;
+					comm.BeginExecuteNonQuery ();
+				return View ();
+			}
+			
+			return View ("NewUser");
+		}
+		[HttpGet]
+		public ActionResult creatUser(){
+			FairOrderingSystem.Models.Company comp = new FairOrderingSystem.Models.Company ();
+			return View (comp);
 		}
 	}
 }

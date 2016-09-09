@@ -1,1 +1,8 @@
 ﻿
+#pageBody{
+	background-color: #eee;
+    padding: 4px;
+    border-width:30px 30px 30px 30px;
+    border-style: solid;
+
+}

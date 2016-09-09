@@ -1,8 +1,11 @@
-﻿@{
+﻿@model IEnumerable<FairOrderingSystem.Models.Company>
+@{
 	ViewBag.Title = "New User";
+
 }
-<html>
-<head>
+
+@Html.ValidationSummary()
+<hCompanyd>
     <title></title>
 </head>
 <body>
@@ -12,17 +15,18 @@
 		</h1>
 	</div>
 	<div class="inputArea">
-		<label> Company Name</label>
-		<input name="company"/>
-		<label> Email </label>
-		<input name="email"/>
-		<label> Phone </label>
-		<input name="phone" />
-		<label> Cell </label>
-		<input name="cell"/>
-		<label> Password </label>
-		<input type="password" name="pass" />
-		<button type ="button" id="newUserButtonSQL" <button type ="button" id="newUserButton" onclick="location.href='@Url.Action("creatUser","Home")'">Create</button>>Login</button>
+
+			
+			<form action="/Home/creatUser" id="createCompany" method="post">
+				<input id="companyName" name="companyName" placeholder="Company Name" type ="text" >
+				<input id="cell" name="cell" placeholder="cell" type="text" > 
+				<input id="phone" name="phone" placeholder="phone" type="text" >
+				<input id="password" name="password" placeholder="password" type="password">
+				<input id="password2" name="password2" placeholder="Verify Password" type="password">
+				<input id="email" name="email" placeholder="email" type="text" >
+				<button type="submit">Create</button>
+			</form>
+			 
 	</div>
 	<p>
 		
